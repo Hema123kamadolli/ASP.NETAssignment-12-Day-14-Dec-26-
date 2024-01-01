@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/OurStyleSheet.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="topPanel">
+        @Html.Partial("_PartialView");
+        <h1>Cricket Info web</h1>
+    </div>
+
+    <div class="mainPanel">
+
+        <h2>Partial View</h2>
+        <style>
+            h2 {
+                border: 2px solid blue;
+                background: blue;
+                text-align :center;
+            }
+        </style>
+        @RenderBody()
+    </div>
+    <div class="footer"><h4>All Rights Reserved</h4></div>
+
+</body>
+</html>
